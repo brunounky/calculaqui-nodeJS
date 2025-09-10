@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div className={styles.logoContainer}>
+        <a href="https://www.brunounky.tech" target="_blank" rel="noopener noreferrer" className={styles.logoContainer}>
           <Image
             src="/favicon.ico"
             alt="Logo"
@@ -16,7 +16,7 @@ export default function Navbar() {
           <span className={styles.devName}>
             Bruno Unky
           </span>
-        </div>
+        </a>
       </div>
     </header>
   );

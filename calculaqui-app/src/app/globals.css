@@ -20,21 +20,27 @@ body {
 }
 
 @media print {
+  @page {
+    size: landscape;
+    margin: 1cm;
+  }
+
   body * {
     visibility: hidden;
   }
+
   #printableArea, #printableArea * {
     visibility: visible;
   }
+
   #printableArea {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+    color: black;
   }
-  @page {
-    margin: 1cm;
-  }
+  
   body {
     background-color: #fff !important;
   }
